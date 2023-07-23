@@ -17,12 +17,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap"
         rel="stylesheet">
-        <!-- custume style -->
-        <style>
-            .btn:hover{
-                background-color: #e76f51d6;
-            }
-        </style>
+    <!-- custume style -->
+    <style>
+        .btn:hover {
+            background-color: #e76f51d6;
+        }
+    </style>
 </head>
 <!-- Font-family added in body -->
 
@@ -30,8 +30,8 @@
     <!-- Header part with banner slider -->
     <header class="max-w-screen-xl mx-auto">
         <!-- Navbar section -->
-        <nav class="navbar bg-base-100 w-full flex justify-between">
-            <div class="navbar-start w-full max-md:flex max-md:flex-row-reverse justify-between">
+        <nav class="navbar bg-base-100 w-full md:flex justify-between">
+            <div class="navbar-start w-full max-md:flex max-xl:flex-row-reverse max-xl:justify-between">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -123,7 +123,7 @@
             <div id="slide4" class="carousel-item relative w-full p-24 max-md:p-3 box-border">
                 <div class="flex justify-between items-center w-full max-md:flex-col">
                     <div class="flex-1">
-                        <h1  class="text-6xl font-[700]">Ride-on R15 V4<br> with Smile</h1>
+                        <h1 class="text-6xl font-[700]">Ride-on R15 V4<br> with Smile</h1>
                         <p class="mt-5 mb-7">
                             Amet minim mollit non deserunt ullamco
                             est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
@@ -142,7 +142,29 @@
         </div>
     </header>
     <!-- Main Part -->
-    <main></main>
+    <main class="max-w-screen-xl">
+        <!-- Fatured bike section -->
+        <section class="p-24 max-md:p-4 my-10">
+            <div class="text-center">
+                <h1 class="text-5xl font-semibold">Fetured Bikes In This Year</h1>
+                <p class="text-[#E76F51] font-semibold my-3">Best bike collection
+                    <div class="w-16 h-1 bg-[#e76f51] m-auto"></div>
+                </p>
+            </div>
+            <div class="items flex pt-5 items-center justify-around max-md:flex-col">
+                <div class="item-1">
+                    <img class="w-full" src="./images/slider/bike3.png" alt="">
+                </div>
+                <div  class="item-2">
+                    <img class="w-full" src="./images/slider/bike4.png" alt="">
+                </div>
+                <div class="item-3">
+                    <img class="w-full" src="./images/slider/bike2.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+    </main>
     <!-- Footer part -->
     <footer></footer>
 
