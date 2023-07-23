@@ -22,7 +22,8 @@
         .btn:hover {
             background-color: #e76f51d6;
         }
-        *{
+
+        * {
             box-sizing: border-box;
         }
     </style>
@@ -30,41 +31,44 @@
 <!-- Font-family added in body -->
 
 <body class="font-[poppins]">
-    <!-- Header part with banner slider -->
-    <header class="max-w-screen-xl mx-auto">
-        <!-- Navbar section -->
-        <nav class="navbar bg-base-100 w-full md:flex justify-between">
-            <div class="navbar-start w-full max-md:flex max-xl:flex-row-reverse max-xl:justify-between">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>News</a></li>
-                        <li><a>Contract</a></li>
-                    </ul>
-                </div>
-                <a class="btn btn-ghost normal-case text-3xl font-bold">Bikerz Zone</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 font-medium text-base">
+    <!-- Navbar section -->
+    <nav class="sticky top-0 navbar bg-white z-10 w-full max-md:flex max-w-screen-xl m-auto">
+        <div class="navbar-start w-full max-md:flex flex-row-reverse max-xl:justify-between">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                     <li><a>Home</a></li>
                     <li><a>Shop</a></li>
                     <li><a>News</a></li>
                     <li><a>Contract</a></li>
                 </ul>
-                <a class="btn text-xl text-white bg-[#E76F51] capitalize px-8">Login</a>
             </div>
-        </nav>
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-3xl font-bold text-left">Bikerz Zone</a>
+            </div>
+
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-medium text-base">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contract</a></li>
+            </ul>
+            <a class="btn text-xl text-white bg-[#E76F51] capitalize px-8">Login</a>
+        </div>
+    </nav>
+    <!-- Header part with banner slider -->
+    <header class="max-w-screen-xl mx-auto">
         <!-- Banner or Slider section -->
-        <div class="carousel w-full h-[600px] bg-[#E76F5111]">
+        <div class="carousel w-full m-0  bg-[#E76F5111]">
             <div id="slide1" class="carousel-item relative w-full p-24 max-md:p-3 box-border">
                 <div class="flex justify-between items-center w-full max-md:flex-col">
                     <div class="flex-1">
@@ -145,20 +149,20 @@
         </div>
     </header>
     <!-- Main Part -->
-    <main class="max-w-screen-xl">
+    <main class="max-w-screen-xl mx-auto">
         <!-- Fatured bike section -->
         <section class="p-24 max-md:p-4 max-md:my-10">
             <div class="text-center">
                 <h1 class="text-5xl font-semibold">Fetured Bikes In This Year</h1>
                 <p class="text-[#E76F51] font-semibold my-3">Best bike collection
-                    <div class="w-16 h-1 bg-[#e76f51] m-auto"></div>
+                <div class="w-16 h-1 bg-[#e76f51] m-auto"></div>
                 </p>
             </div>
             <div class="items flex pt-5 items-center justify-around max-md:flex-col">
                 <div class="item-1">
                     <img class="w-full" src="./images/slider/bike3.png" alt="">
                 </div>
-                <div  class="item-2">
+                <div class="item-2">
                     <img class="w-full" src="./images/slider/bike4.png" alt="">
                 </div>
                 <div class="item-3">
@@ -175,33 +179,36 @@
                 <div class="card max-md:w-4/5 max-md:m-auto bg-base-100 shadow-xl">
                     <figure><img src="./images/others/latest1.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Ducati XDIAVEL S-73</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
                     </div>
-                  </div>
-                  <div class="card max-md:w-4/5 max-md:m-auto bg-base-100 shadow-xl">
+                </div>
+                <div class="card max-md:w-4/5 max-md:m-auto bg-base-100 shadow-xl">
                     <figure><img src="./images/others/latest2.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Motorcycles & Scooters</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
+                        <h2 class="card-title">Motorcycles & Scooters</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
                     </div>
-                  </div>
-                  <div class="card max-md:w-4/5 max-md:m-auto bg-base-100 shadow-xl">
+                </div>
+                <div class="card max-md:w-4/5 max-md:m-auto bg-base-100 shadow-xl">
                     <figure><img src="./images/others/latest3.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">2021 Honda CBR500R</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
+                        <h2 class="card-title">2021 Honda CBR500R</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </section>
     </main>
