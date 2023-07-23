@@ -22,6 +22,9 @@
         .btn:hover {
             background-color: #e76f51d6;
         }
+        *{
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <!-- Font-family added in body -->
@@ -144,7 +147,7 @@
     <!-- Main Part -->
     <main class="max-w-screen-xl">
         <!-- Fatured bike section -->
-        <section class="p-24 max-md:p-4 my-10">
+        <section class="p-24 max-md:p-4 max-md:my-10">
             <div class="text-center">
                 <h1 class="text-5xl font-semibold">Fetured Bikes In This Year</h1>
                 <p class="text-[#E76F51] font-semibold my-3">Best bike collection
@@ -163,7 +166,44 @@
                 </div>
             </div>
         </section>
-        
+        <!-- Letest news part -->
+        <section class="p-24 max-md:p-4 max-md:my-10">
+            <div class="text-center">
+                <h1 class="text-5xl font-semibold mb-10">Fetured Bikes In This Year</h1>
+            </div>
+            <div class="container flex justify-center md:space-x-4 max-md:space-y-4 max-md:flex-col">
+                <div class="card max-md:w-4/5 max-md:m-auto bg-base-100 shadow-xl">
+                    <figure><img src="./images/others/latest1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card max-md:w-4/5 max-md:m-auto bg-base-100 shadow-xl">
+                    <figure><img src="./images/others/latest2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Motorcycles & Scooters</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card max-md:w-4/5 max-md:m-auto bg-base-100 shadow-xl">
+                    <figure><img src="./images/others/latest3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">2021 Honda CBR500R</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </main>
     <!-- Footer part -->
     <footer></footer>
